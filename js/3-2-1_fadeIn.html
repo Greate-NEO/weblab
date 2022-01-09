@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="/css/cssEx/cssReset.css">
+    <style>
+      div{float:left;width:200px;height:50px;padding:20px;background:skyblue}
+      .displayNone{display:none}
+    </style>
+    <script type="text/javascript" src="./jquery-3.1.0.min.js"></script>
+    <script>
+      $(function(){
+        $('#fadeIn').fadeIn();
+        $('#fadeIn5000').fadeIn(5000);
+      });
+    </script>
+  </head>
+  <body>
+    <div class="displayNone" id="fadeIn">
+      fadeIn() 적용
+    </div>
+    <div class="displayNone" id="fadeIn5000">
+      fadeIn(5000) 적용
+    </div>
+  </body>
+</html>

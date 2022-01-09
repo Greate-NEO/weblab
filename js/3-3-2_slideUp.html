@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="/css/cssEx/cssReset.css">
+    <style>
+      div{float:left;width:200px;height:50px;padding:20px;background:skyblue}
+    </style>
+    <script type="text/javascript" src="./jquery-3.1.0.min.js"></script>
+    <script>
+      $(function(){
+        $('#slideUp').slideUp();
+        $('#slideUp5000').slideUp(5000);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="slideUp">
+      slideUp() 적용
+    </div>
+    <div id="slideUp5000">
+      slideUp(5000) 적용
+    </div>
+  </body>
+</html>

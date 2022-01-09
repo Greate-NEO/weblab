@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="../css/cssEx/cssReset.css">
+    <style>
+      div{width:200px;height:60px;padding:20px;background:skyblue}
+      #displayNoon{display:none}
+    </style>
+    <script type="text/javascript" src="./jquery-3.1.0.min.js"></script>
+    <script>
+      $(Function(){
+        $('#displayNone').show();
+      });
+    </script>
+  </head>
+  <body>
+    <div id="displayNone">
+      diplay:none이 적용된 박스 <br />
+      jQuery의 show()함수로 인해 none값이 block으로 변경되어 표시됨
+    </div>
+  </body>
+</html>
