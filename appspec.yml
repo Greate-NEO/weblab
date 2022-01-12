@@ -3,3 +3,7 @@ os: linux
 files:
   - source: /
     destination: /etc/nginx/src/weblab
+permissions:
+  - object: /etc/nginx/src
+    owner: root
+    group: www-data
