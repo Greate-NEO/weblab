@@ -5,22 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        #box1{float:left;width: 100px;height:100;margin: 20px;background:skyblue;position:absolute}
-    </style>
     <script type="text/javascript" src="./jquery-3.1.0.min.js"></script>
     <script>
         $(function(){
-            box1 = $('#box1');
+            guestName = $('#guestName')
+            btn = $('#btn')
 
-            box1.animate({
-                left:300,1
-                top:100,
-            },10000);
-        });
+            btn.click(function(){
+                guestName.val('김유나')
+            })
+        })
     </script>
 </head>
 <body>
-    <div id="box1"></div>
+    <input type="text" id="guestName" value="김태영">
+    <input type="button" id="btn" value="이름변경"> 
 </body>
 </html>

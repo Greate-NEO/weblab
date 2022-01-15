@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent #parent2{width: 100px;height:100px;background:skyblue}
+    </style>
+    <script type="text/javascript" src="./jquery-3.1.0.min.js"></script>
+    <script>
+        $(function(){
+            parent = $('#parent')
+            parent2 = $('#parent2')
+            btn = $('#btn')
+
+            btn.click(function(){
+                parent.append(parent2)
+            })
+        })
+    </script>
+</head>
+<body>
+    <div id="parent">
+        부모 엘리먼트1
+    </div>
+    <div id="parent2">
+        부모 엘리먼트2
+    </div>
+    <input id="btn" type="button" value="버튼">
+</body>
+</html>
