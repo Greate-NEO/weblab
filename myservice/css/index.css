@@ -1,5 +1,5 @@
-#signup{_display:none}
-#introSite{display:none}
+#signup{display:none}
+#introSite{_display:none}
 /* mobile base css source */
 @media screen and (min-width:0px) and (max-width:1199px){
     body{background:#fff}
