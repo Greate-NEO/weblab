@@ -29,6 +29,20 @@ header{clear:both;float:left;width:100%;background:rgba(85,191,247,0.7)}
 .loginSubmitBox{float:right;width:50px;background:#fff;border:1px solid #ccc;margin-left:5px;padding:0.1em}
 #loginSubmit{clear:both;float:left;width:100%;background:none;border:none;color:#aaa;font-size:0.7rem}
 }
+@media screen and (max-width:366px) {
+#myService{font-size:1.5rem}
+#loginEmailArea label, #loginPwArea label{font-size:1rme}
+#loginEmailArea input, #loginPwArea input{font-size:1rem}
+.loginSubmitBox{padding:0.2rem}
+#loginSubmit{font-size:1rem}
+}
+@media screen and (min-width:367px) and (max-width:458px){
+#myService{font-size:1.7rem}
+#loginEmailArea label, #loginPwArea label{font-size:1.2rem}
+#loginEmailArea input, #loginPwArea input{font-size:1.2rem}
+.loginSubmitBox{padding:0.2rem}
+#loginSubmit{font-size:1rem}
+}
 #loginForm{clear:both}
 #loginEmailArea, #loginPwArea{clear:both;float:left;width:100%}
 #loginPwArea{margin-top:0.4rem}
