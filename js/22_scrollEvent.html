@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{height: 5000px;}
+        #box1{float: left;width: 100px;height: 100px;position:fixed;background:skyblue;display:none}
+    </style>
+    <script type="text/javascript" src="./jquery-3.1.0.min.js"></script>
+    <script>
+        $(function(){
+            $(window).scroll(function(){
+                var nowScrollVar = $(this).scrollTop();
+                console.log('스크롤 이벤트 작동 스크롤 값'+nowScrollVar)
+
+                if(nowScrollVar >= 1000 && nowScrollVar <= 1100){
+                    $('#box1').show();
+                }else if(nowScrollVar <= 999){
+                    $('#box1').hide();
+                }
+
+            })
+        })
+    </script>
+</head>
+<body>
+    <div id="box1"></div>
+</body>
+</html>

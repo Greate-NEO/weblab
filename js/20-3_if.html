@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="./jquery-3.1.0.min.js"></script>
+    <script>
+        $(function(){
+
+            var box1 = $('#box1')
+            var box2 = $('#box2')
+            var box3 = $('#box3')
+
+            if(box1.text() == 'box 2'){
+                box1.css('background','yellow')
+            }
+            else if(box2.text() == 'box 2'){
+                box2.css('background','skyblue')
+            }
+            else if(box3.text() == 'box 2'){
+                box3.css('background','hotpink')
+            }
+        })
+    </script>
+</head>
+<body>
+    <div id="box1">box 1</div>
+    <div id="box2">box 2</div>
+    <div id="box3">box 3</div>
+</body>
+</html>

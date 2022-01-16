@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{float:left;width:90px;height:90px;margin-left:40px}
+    </style>
+    <script type="text/javascript" src="./jquery-3.1.0.min.js"></script>
+    <script>
+        $(function(){
+            //length()는 해당 엘리먼트가 몇 개인지 알려주는 기능
+            //즉 $('.box').length()의 값은 8입니다.
+            for(var i=1; i<= $('.box').length; i++){
+                if(i==3){
+                    $('.box:nth-child('+i+')').text(i+'번째 위치한 박스입니다.')
+                    if(i==3){
+                        $('.box:nth-child('+i+')').css('background','skyblue')
+                    }
+                }
+            }
+        })
+    </script>
+</head>
+<body>
+    <div class="box">box</div>
+    <div class="box">box</div>
+    <div class="box">box</div>
+    <div class="box">box</div>
+    <div class="box">box</div>
+    <div class="box">box</div>
+    <div class="box">box</div>
+    <div class="box">box</div>
+</body>
+</html>
