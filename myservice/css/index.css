@@ -21,7 +21,7 @@ body{background:#fff}
 .inputBox{float:left;width:90%;background:#fff;margin-left:1rem;border:1px solid #ccc}
 .row input{float:left;width:98%;font-size:1.5rem;margin-left:2%;background:#fff;border:none}
 .row .selectBox{float:left;width:21%;border:1px solid #ccc;background:#fff;margin-top:3px}
-.row .selectBox select{float:left;background:#fff url('/myservice/images/index/selectTagBg.png');border:none;-webkit-appearance:none;-moz-appearance:none;background-size:10px;background-repeat:no-repeat;background-position:90% 5px;width:90%;margin-left:5px;font-size:1rem}
+.row .selectBox select{float:left;background:#fff url('../images/index/mybgImage3.jpg');border:none;-webkit-appearance:none;-moz-appearance:none;background-size:10px;background-repeat:no-repeat;background-position:90% 5px;width:90%;margin-left:5px;font-size:1rem}
 
 #birthYear{font-size:1rem}
 .selectBoxMargin{margin-left:2%;margin-right:2%}
@@ -29,6 +29,7 @@ body{background:#fff}
 
 #genderLabel{clear:both;width:80%;margin:0 auto}
 #gMM{border-left:none}
+.genderRow label{float:left;width:49%;border:1px solid #ccc;text-align:center;padding-left:0}
 .genderRow input{clear:both;float:none;width:0px;visibility:hidden}
 
 #valueError{float:left;width:100%;text-align:center;color:red;font-size:2em}
